@@ -1,0 +1,25 @@
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block; 
+    position: relative; 
+}
+
+.nav li ul {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+}
+
+.nav li:hover ul {
+    display: block; 
+}
+
+.nav li ul li {
+    display: block;
+}
+    
