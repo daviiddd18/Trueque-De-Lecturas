@@ -1,42 +1,24 @@
 'use client'
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import styles from '@/app/styles/Navbar.module.css'
+import Link from 'next/link'
 
 const Navbar = () => {
-  const [librosMenuOpen, setLibrosMenuOpen] = useState(false);
-  const [resenyasMenuOpen, setResenyasMenuOpen] = useState(false);
-
+  
   return (
-    <nav className={styles.nav}>
-      <ul>
-        <li onMouseEnter={() => setLibrosMenuOpen(true)} onMouseLeave={() => setLibrosMenuOpen(false)}>
-          <Link href="/libros">Libros</Link>
-          {librosMenuOpen && (
-            <ul>
-              <li><Link href="/libros/buscar">Buscar</Link></li>
-              <li><Link href="/libros/registrar">Registrar</Link></li>
-              <li><Link href="/libros/detalles">Detalles</Link></li>
-            </ul>
-          )}
-        </li>
-        <li onMouseEnter={() => setResenyasMenuOpen(true)} onMouseLeave={() => setResenyasMenuOpen(false)}>
-          <Link href="/resenyas">Reseñas</Link>
-          {resenyasMenuOpen && (
-            <ul>
-              <li><Link href="/resenyas/escritas">Escritas</Link></li>
-              <li><Link href="/resenyas/videos">Videos</Link></li>
-            </ul>
-          )}
-        </li>
-        <li><Link href="/login">Login</Link></li>
-        <li><Link href="/registrar">Registrar</Link></li>
-        <li><Link href="/perfil">Perfil</Link></li>
-      </ul>
-    </nav>
-  );
-};
+    <header className='flex items-center justify-between'>
+      <section className='text-primary font-bold text-2xl'>Trueque de Lecturas</section>
+      <nav className="flex gap-4 text-gray-500 font-semibold">
+        <ul className='flex gap-10'>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/libros">Libros</Link></li>
+          <li><Link href="/resenyas">Reseñas</Link></li>
+          <li><Link href="/usuarios/registrar">Registrar</Link></li>
+          <li><Link className="bg-primary rounded-full text-white px-5 py-2" href="/usuarios/login">Login</Link></li>
+        </ul>
+      </nav>
+    </header>
+  )
+}
 
-export default Navbar;
+export default Navbar
 
