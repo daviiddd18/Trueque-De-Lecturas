@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Trueque de Lecturas
 
-## Getting Started
+Este es un poryecto iniciado con [Next.js](https://nextjs.org/) y desplegada en [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) 
 
-First, run the development server:
+Idea general: Web de intercambio de libros de segunda mano. (Sujeto a cambio)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+El concepto de una web de intercambio de libros puede ser interesante, muchos lectores no pueden permitirse el comprar todos los libros que quieren porque pueden llegar a ser muy caros. Muchos no terminan libros ya que no son lo esperado o simplemente lo leen una vez y saben que no va a volver a leérselo. Siendo tan pocos los libros releídos y tan poco espacio en las casas actuales, una buena manera de saciar la sed lectora sería el tan antiguo trueque, pero modernizado con las nuevas tecnologías. La web será un intercambiador de libros de segunda mano, tú quieres mi libro y yo quiero el tuyo, así de simple.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Con un sistema de Registro y Loguin de usuario, un apartado donde la gente podrá registrar sus libros con un formulario simple (Nombre, autor, editorial, género, tipo de tapa, número de páginas, una pequeña reseña personal) y otro apartado donde poder buscar los libros que quiera leerse.
+Un segundo apartado podría ser una sección de reseñas tanto escritas como en videos de lectores que tengan redes sociales especializadas en libros. En esta sección se pueden dar a conocer entre los lectores y una buena forma de hacer colaboraciones entre ellos. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Con un famoso “match” donde las dos personas conectadas por su necesidad de búsqueda/venta podrán intercambiar sus libros de manera a distancia como de manera presencial.
+Una manera de tener beneficios será de forma por suscripción mensual o anual para poder colgar más de x número de libros o poder buscar y darle like a los libros que busca.
+Otra forma de tener beneficios podría ser una pequeña comisión por cada trueque realizado.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
